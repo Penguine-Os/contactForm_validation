@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/myStyle.css">
+
+    <!--Ion-Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--sweetAlert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+
+<form class="p-4 opacity" id="formulier">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="voornaam">Voornaam</label>
+            <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="achternaam">Achternaam</label>
+            <input type="text" class="form-control" id="achternaam" placeholder="Uw Achternaam">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="gebruikersnaam">Gebruikersnaam</label>
+            <label class="sr-only" for="gebruikersnaam">r090125</label>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" id="gebruikersnaam" placeholder="r090125">
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="form-group  col-md-6">
+            <label for="wachtwoord1">Wachtwoord</label>
+            <input type="password" id="wachtwoord1" class="form-control" aria-describedby="passwordHelpInline">
+            <small id="passwordHelpInline" class="text-muted">
+                Je wachtwoord moet minstens 8 tekens lang zijn
+            </small>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="wachtwoord2">Wachtwoord Herhalen</label>
+            <input type="password" class="form-control" id="wachtwoord2" placeholder="Password">
+        </div>
+
+    </div>
+
+
+    <div class="form-group">
+        <label for="adress">Adress</label>
+        <input type="text" class="form-control" id="adress" placeholder="Uw adres en huisnummer">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="land">Land</label>
+            <select id="land" class="form-control">
+                <option selected value="">Kies een Land</option>
+                <option value="Frankrijk">Frankrijk</option>
+                <option value="België">België</option>
+                <option value="Engeland">Engeland</option>
+                <option value="Duitsland">Duitsland</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="provincie">Provincie</label>
+            <select id="provincie" class="form-control">
+                <option selected value="">Kies een provincie</option>
+                <option value="Antwerpen">Antwerpen</option>
+                <option value="Henegouwen">Henegouwen</option>
+                <option value="Limburg">Limburg</option>
+                <option value="Luik">Luik</option>
+                <option value="Luxemburg">Luxemburg</option>
+                <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                <option value="Waals-Brabant">Waals-Brabant</option>
+                <option value="West-Vlaanderen">West-Vlaanderen</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="postcode">Postcode</label>
+            <input type="number" class="form-control" id="postcode">
+        </div>
+    </div>
+    <div class="form-row border-top pt-4">
+        <div class="form-group  col-md-6">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rbtnNieuwsbrief">
+                <label class="form-check-label">
+                    Inschrijven voor onze niewsbrief
+                </label>
+
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rbtnVoorwaarde">
+                <label class="form-check-label">
+                    Ik ga akkoord met algemene voorwaarde
+                </label>
+            </div>
+
+        </div>
+        <div class="form-group  col-md-6">
+
+        </div>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+<body>
+
+<script src="assets/js/validatieScript.js"></script>
+
+
+
+</body>
+
+
+</html>
